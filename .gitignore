@@ -1,0 +1,17 @@
+.env.local
+node_modules
+dist
+src/convex/_generated
+
+# Secrets never belong in the repository. Values are held in the platform's
+# Keys / API keys UI and injected into the deployment as environment secrets,
+# which is why nothing under src/ reads a key from the client bundle.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+service-account.json
